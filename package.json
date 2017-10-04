@@ -14,7 +14,8 @@
     "dev": "grunt serve",
     "serve": "grunt jekyll",
     "add": "all-contributors add",
-    "generate": "all-contributors generate"
+    "generate": "all-contributors generate",
+    "gh-pages": "grunt push"
   },
   "devDependencies": {
     "all-contributors-cli": "^4.3.0",
