@@ -1,0 +1,41 @@
+<div class="sidebar navbar-toggleable-md navbar-inverse">
+    <a href="#" class="navbar-toggler navbar-toggler-right my-2 py-2" data-toggle="collapse" data-target="#main-menu">
+        &#9776;
+    </a>
+    <div class="text-lg-center py-3 px-3">
+        <a class="site-title" href="{{ site.baseurl }}/">
+            ... site title
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-menu">
+        <div class="col-12 px-0">
+            <a class="sidebar-user" href="#profile">
+                <div class="media">
+                    ... media object
+                </div>
+            </a>
+            <ul id="menu" class="sidebar-menu">
+                <li class="active">
+                    <a class="sidebar-link" href="#">... sidebar link</a>
+                </li>
+                <li class="sidebar-sub">
+                    <a class="sidebar-link collapsed" href="#sub-menu-1" data-toggle="collapse">... toggable submenu</a>
+                    <ul class="sidebar-sub collapse" id="sub-menu-1">
+                        <li class="active">
+                            <a class="sidebar-link" href="#">... sidebar link</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-sub active">
+                    <a class="sidebar-link" href="#sub-menu-1" data-toggle="collapse">... active toggable submenu</a>
+                    <ul class="sidebar-sub collapse in" id="sub-menu-1">
+                        <li class="active">
+                            <a class="sidebar-link" href="#">... sidebar link</a>
+                        </li>
+                        ... and so on
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
