@@ -1,0 +1,11 @@
+options:
+  merge-default-rules: true
+files:
+  include: '**/*.scss'
+rules:
+  nesting-depth:
+    - 1
+    - max-depth: 4
+
+
+

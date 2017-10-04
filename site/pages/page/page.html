@@ -1,0 +1,29 @@
+---
+layout: page
+title: Page layout
+permalink: /page-layout/
+icon: fa-file-o
+---
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1>Page layout</h1>
+            <p>
+                The setup for the admin is the page layout, lets examine.
+            </p>
+            <h3>Layout</h3>
+            <p>
+                This is the framework for the page. It sets up the menu bar and the main content. I just added a
+                container on the main content so it wont go wider than a bootstrap container.
+            </p>
+            {% highlight html %}{% include_relative page-layout.html %}{% endhighlight %}
+            <h3>Sidebar</h3>
+            <p>
+                An example for a sidebar, it has a couple of examples, a media object i juse for my user image. A
+                default sidebar link and an open and closed sidebar menu.
+            </p>
+            {% highlight html %}{% include_relative page-sidebar.html %}{% endhighlight %}
+        </div>
+    </div>
+</div>
+{% include edit.html %}

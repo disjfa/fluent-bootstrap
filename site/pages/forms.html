@@ -1,0 +1,122 @@
+---
+layout: page
+title: Forms
+permalink: /forms/
+icon: fa-check-square-o
+---
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-6">
+            <h3>Default forms</h3>
+            <form action="#">
+                {% for data in site.data.formdata %}
+                    <div class="form-group">
+                        <label for="default-{{ data.id }}">
+                            {{ data.name }}
+                        </label>
+                        {% if data.type == "select" %}
+                            <select name="default-{{ data.id }}" id="default-{{ data.id }}" class="form-control">
+                                {% for option in data.options %}
+                                    <option value="{{ option }}">{{ option }}</option>
+                                {% endfor %}
+                            </select>
+                            {% elsif data.type == "checkbox" %}
+                            {% for option in data.options %}
+                                <div>
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input"
+                                               name="default-{{ data.id }}-{{ option }}">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">{{ option }}</span>
+                                    </label>
+                                </div>
+                            {% endfor %}
+                            {% elsif data.type == "radio" %}
+                            {% for option in data.options %}
+                                <div>
+                                    <label class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" name="default-{{ data.id }}"
+                                               required>
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">{{ option }}</span>
+                                    </label>
+                                </div>
+                            {% endfor %}
+                            {% elsif  data.type == "textarea" %}
+                            <textarea name="default-{{ data.id }}" id="default-{{ data.id }}" class="form-control"
+                                      required></textarea>
+                        {% else %}
+                            <input type="{{ data.type }}" id="default-{{ data.id }}" class="form-control" required>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-floppy-o"></i>
+                        save
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="col-xl-6">
+            <h3>Inline forms</h3>
+            <form action="#">
+                {% for data in site.data.formdata %}
+                    <div class="form-group row">
+                        <label for="inline-{{ data.id }}" class="col-lg-4 col-form-label">
+                            {{ data.name }}
+                        </label>
+                        <div class="col-lg-8">
+                            {% if data.type == "select" %}
+                                <select name="inline-{{ data.id }}" id="inline-{{ data.id }}" class="form-control"
+                                        required>
+                                    {% for option in data.options %}
+                                        <option value="{{ option }}">{{ option }}</option>
+                                    {% endfor %}
+                                </select>
+                                {% elsif data.type == "checkbox" %}
+                                {% for option in data.options %}
+                                    <div>
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input"
+                                                   name="inline-{{ data.id }}-{{ option }}">
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">{{ option }}</span>
+                                        </label>
+                                    </div>
+                                {% endfor %}
+                                {% elsif data.type == "radio" %}
+                                {% for option in data.options %}
+                                    <div>
+                                        <label class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" name="inline-{{ data.id }}"
+                                                   required>
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">{{ option }}</span>
+                                        </label>
+                                    </div>
+                                {% endfor %}    {% elsif  data.type == "textarea" %}
+                                <textarea name="inline-{{ data.id }}" id="inline-{{ data.id }}" class="form-control"
+                                          required></textarea>
+                            {% else %}
+                                <input type="{{ data.type }}" id="inline-{{ data.id }}" class="form-control" required>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="form-group row">
+                    <label for="" class="col-lg-4 col-form-label">
+
+                    </label>
+                    <div class="col-lg-8">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa fa-floppy-o"></i>
+                            save
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% include edit.html %}

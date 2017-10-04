@@ -1,0 +1,23 @@
+# Site settings
+title: Glynn admin
+name: Disjfa valours
+email: disjfa@disjfa.com
+description: >
+  A simple admin page, responsive and beautiful. For useage on your own product.
+  I has a lot of example use cases you can implement on your own site or admin page.
+baseurl: "/fluent-bootstrap"
+url: "https://disjfa.github.io"
+github_url:  https://github.com/disjfa/fluent-bootstrap
+github_username:  disjfa
+github_base: /tree/master/site/
+
+# Google
+google_analytics: UA-83598448-1
+
+# Build settings
+markdown: kramdown
+
+# deployment
+source: site
+host: 0.0.0.0
+port: 5000

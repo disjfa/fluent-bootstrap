@@ -1,0 +1,43 @@
+- name: Example text
+  id: example-text
+  type: text
+
+- name: Example email
+  id: example-email
+  type: email
+
+- name: Example password
+  id: example-password
+  type: password
+
+- name: Example number
+  id: example-number
+  type: number
+
+- name: Example select
+  id: example-select
+  type: select
+  options:
+    - one
+    - two
+    - three
+
+- name: Example checkbox
+  id: example-checkbox
+  type: checkbox
+  options:
+    - one
+    - two
+    - three
+
+- name: Example radio
+  id: example-radio
+  type: radio
+  options:
+    - one
+    - two
+    - three
+
+- name: Example textarea
+  id: example-textarea
+  type: textarea

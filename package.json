@@ -1,0 +1,42 @@
+{
+  "name": "fluent-bootstrap",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": {
+    "name": "disjfa",
+    "email": "disjfa@disjfa.nl"
+  },
+  "license": "MIT",
+  "homepage": "https://disjfa.github.io/fluent-bootstrap/",
+  "description": "Simple admin template using wonderful styles",
+  "scripts": {
+    "build": "npm install; grunt",
+    "dev": "grunt serve",
+    "serve": "grunt jekyll",
+    "add": "all-contributors add",
+    "generate": "all-contributors generate"
+  },
+  "devDependencies": {
+    "all-contributors-cli": "^4.3.0",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-browserify": "^5.0.0",
+    "grunt-build-control": "^0.7.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jekyll": "^0.4.4",
+    "grunt-sass-lint": "^0.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "bootstrap-social": "^5.0.0",
+    "chart.js": "^2.2.1",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.0.0",
+    "moment": "^2.14.1",
+    "popper.js": "^1.12.3"
+  }
+}

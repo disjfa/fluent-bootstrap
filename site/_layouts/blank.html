@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+<div class="page-main-bg container bg-main">
+    <div class="row">
+        <div class="col-12 page-logo">
+            <div>
+                <img src="{{ "/assets/barista-icons_coffea-arabica.svg" | prepend: site.baseurl }}" alt="{{ site.title }}" title="{{ site.title }}">
+            </div>
+            <h2 class="text-center">
+                {{ site.title }}
+            </h2>
+        </div>
+    </div>
+    <br>
+    {{ content }}
+    {% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,12 @@
+{% for my_page in site.pages %}
+    {% if my_page.title %}
+        <li{% if my_page.url == page.url %} class="active"{% endif %}>
+            <a class="sidebar-link" href="{{ my_page.url | prepend: site.baseurl }}">
+                <i class="fa fa-fw {{ my_page.icon }}"></i>
+                <span class="sidebar-title">
+                    {{ my_page.title }}
+                </span>
+            </a>
+        </li>
+    {% endif %}
+{% endfor %}

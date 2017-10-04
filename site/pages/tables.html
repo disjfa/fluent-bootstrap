@@ -1,0 +1,90 @@
+---
+layout: page
+title: Tables
+permalink: /admin/tables/
+icon: fa-th-list
+---
+<div class="container-fluid">
+    <h1>Tables</h1>
+    <hr>
+    <h3>Default tables</h3>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>name</th>
+                <th>github</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for data in site.data.tabledata %}
+                <tr>
+                    <td>{{ data.name }}</td>
+                    <td>{{ data.github }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Hover tables</h3>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>name</th>
+                <th>github</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for data in site.data.tabledata %}
+                <tr>
+                    <td>{{ data.name }}</td>
+                    <td>{{ data.github }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Striped tables</h3>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>name</th>
+                <th>github</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for data in site.data.tabledata %}
+                <tr>
+                    <td>{{ data.name }}</td>
+                    <td>{{ data.github }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Inversed tables</h3>
+    <div class="table-responsive">
+        <table class="table table-inverse">
+            <thead>
+            <tr>
+                <th>name</th>
+                <th>github</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for data in site.data.tabledata %}
+                <tr>
+                    <td>{{ data.name }}</td>
+                    <td>{{ data.github }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% include edit.html %}
