@@ -73,7 +73,7 @@ $enable-rounded: false; // altered
 $enable-shadows: true; // altered
 $enable-gradients: false;
 $enable-transitions: false;
-$enable-hover-media-query: false;
+$enable-hover-media-query: true;
 $enable-grid-classes: true;
 $enable-print-styles: true;
 
@@ -498,8 +498,8 @@ $breadcrumb-bg: $gray-200;
 $breadcrumb-divider-color: $gray-600;
 $breadcrumb-active-color: $gray-600;
 $breadcrumb-divider: ''/'';
-$carousel-control-color: $white;
-$carousel-control-width: 15%;
+$carousel-control-color: $gray-500;
+$carousel-control-width: 30px;
 $carousel-control-opacity: .5;
 $carousel-indicator-width: 30px;
 $carousel-indicator-height: 3px;

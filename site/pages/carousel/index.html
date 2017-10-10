@@ -1,0 +1,153 @@
+---
+layout: page
+title: Carousel
+permalink: /carousel/
+icon: fa-picture-o
+order: 10
+---
+
+<div class="container-fluid">
+    <h1>Carousel</h1>
+    <p>On a white background, like an example we found.</p>
+    <div id="carousel-text-example" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-text-example" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-text-example" data-slide-to="1"></li>
+            <li data-target="#carousel-text-example" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center flex-column carousel-body bg-light">
+                    <div class="carousel-delay row">
+                        <div class="col-lg-6 text-dark d-flex justify-content-center flex-column py-3">
+                            <div>
+                                <h1>A animi</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi consectetur
+                                    deleniti dolorum esse est ipsa, ipsum iure nam omnis pariatur, placeat
+                                    praesentium provident reiciendis reprehenderit sint suscipit tenetur ut?
+                                </p>
+                                <a href="#" class="btn btn-dark">
+                                    This is a button
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 py-3">
+                            <img src="{{ "/assets/photo-1430418372158-66adfd0d88cb.jpg" | prepend: site.baseurl }}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center flex-column carousel-body bg-light">
+                    <div class="carousel-delay row">
+                        <div class="col-lg-6 text-dark d-flex justify-content-center flex-column py-3">
+                            <div>
+                                <h1>Ad architecto</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cum
+                                    doloremque enim esse magni nam numquam, porro possimus quae quod rem repudiandae
+                                    ullam veniam, vero? Explicabo quod similique voluptate.
+                                </p>
+                                <a href="#" class="btn btn-dark">
+                                    This is a button
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 py-3">
+                            <img src="{{ "/assets/photo-1431440869543-efaf3388c585.jpg" | prepend: site.baseurl }}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center flex-column carousel-body bg-light">
+                    <div class="carousel-delay row">
+                        <div class="col-lg-6 text-dark d-flex justify-content-center flex-column py-3">
+                            <div>
+                                <h1>Accusantium</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid
+                                    cupiditate distinctio eius error facere mollitia natus reprehenderit sit
+                                    temporibus! A, autem consequuntur molestiae nemo neque nesciunt nisi nulla
+                                    officiis.
+                                </p>
+                                <a href="#" class="btn btn-dark">
+                                    This is a button
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 py-3">
+                            <img src="{{ "/assets/photo-1466278313810-9aca9abea861.jpg" | prepend: site.baseurl }}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev text-dark" href="#carousel-text-example" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next text-dark" href="#carousel-text-example" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <br>
+    <h3>Add a background</h3>
+    <p>Or we just go full on background image, still use an embed for positioning.</p>
+    <div id="carousel-image-example" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-image-example" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-image-example" data-slide-to="1"></li>
+            <li data-target="#carousel-image-example" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="img-cover d-flex justify-content-center flex-column carousel-body" style="background-image: url({{ "/assets/photo-1430418372158-66adfd0d88cb.jpg" | prepend: site.baseurl }});">
+                    <div class="carousel-delay">
+                        <h1>Molestiae</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque doloribus,
+                            eaque esse expedita hic ipsam laboriosam nulla provident quos! Culpa cum, esse facilis
+                            maiores molestiae nam nemo qui veritatis!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="img-cover d-flex justify-content-center flex-column carousel-body" style="background-image: url({{ "/assets/photo-1431440869543-efaf3388c585.jpg" | prepend: site.baseurl }});">
+                    <div class="carousel-delay">
+                        <h1>Deserunt doloribus</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloribus iusto neque
+                            nulla ut? Dolor et laboriosam qui tempora! Ab consectetur distinctio ea hic illum,
+                            laborum mollitia obcaecati odio sed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="img-cover d-flex justify-content-center flex-column carousel-body" style="background-image: url({{ "/assets/photo-1466278313810-9aca9abea861.jpg" | prepend: site.baseurl }});">
+                    <div class="carousel-delay">
+                        <h1>Ad deleniti</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deleniti facere quas?
+                            Accusamus ad delectus doloribus, eligendi enim est exercitationem hic ipsam iste iure
+                            labore, nisi nulla pariatur quae totam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-image-example" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-image-example" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+{% include edit.html %}
