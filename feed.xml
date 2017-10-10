@@ -6,9 +6,26 @@
 </description>
     <link>https://disjfa.github.io/fluent-bootstrap/</link>
     <atom:link href="https://disjfa.github.io/fluent-bootstrap/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Oct 2017 21:50:20 +0000</pubDate>
-    <lastBuildDate>Tue, 10 Oct 2017 21:50:20 +0000</lastBuildDate>
+    <pubDate>Tue, 10 Oct 2017 21:57:41 +0000</pubDate>
+    <lastBuildDate>Tue, 10 Oct 2017 21:57:41 +0000</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>Setup fluent bootstrap!</title>
+        <description>&lt;p&gt;Ok so i wanted to built a fluent design using microsofts &lt;a href=&quot;https://fluent.microsoft.com/&quot;&gt;Fluent Design System&lt;/a&gt;. Cool, but i know &lt;a href=&quot;https://getbootstrap.com/docs/4.0/components/carousel/&quot;&gt;Bootstrap&lt;/a&gt;.
+Lets merge those. Disable transitions and make my own. Lets go!&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 06 Jul 2016 21:17:01 +0000</pubDate>
+        <link>https://disjfa.github.io/fluent-bootstrap/news/update/2016/07/06/setup-fluent-bootstrap.html</link>
+        <guid isPermaLink="true">https://disjfa.github.io/fluent-bootstrap/news/update/2016/07/06/setup-fluent-bootstrap.html</guid>
+        
+        
+        <category>news</category>
+        
+        <category>update</category>
+        
+      </item>
     
   </channel>
 </rss>
