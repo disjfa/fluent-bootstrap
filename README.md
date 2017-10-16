@@ -8,7 +8,7 @@
 [![Star on GitHub][github-star-badge]][github-star]
 [![Tweet][twitter-badge]][twitter]
 
-A simple and useful admin page interface. An example can be found here: [fluent-bootstrap](https://disjfa.github.io/fluent-bootstrap/).
+A simple and useful interface based on [Fluent design by Microsoft](https://fluent.microsoft.com/). An example can be found here: [fluent-bootstrap](https://disjfa.github.io/fluent-bootstrap/).
 
 # Instalation
 

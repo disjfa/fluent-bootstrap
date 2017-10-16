@@ -1,0 +1,31 @@
+---
+layout: page
+title: Paralax
+permalink: /paralax/
+icon: fa-address-card-o
+order: 10
+---
+
+<div class="container-fluid">
+    <h1>Paralax</h1>
+    <p>
+        Parallax is a visual effect where items closer to the viewer move faster than items in the background. Parallax
+        creates a feeling of depth, perspective, and movement.
+    </p>
+    <p>
+        In these examples i made use of <a href="http://pixelcog.github.io/parallax.js/">parallax.js</a>.
+    </p>
+    {% include_relative paralax-example-basic.html %}
+    <h4>Code</h4>
+    {% highlight html %}{% include_relative paralax-example-basic.html %}{% endhighlight %}
+    <h1>Add items to the paralax</h1>
+    <p>
+        And so on, just add items to your paralax and enjoy!
+    </p>
+    {% include_relative paralax-example-items.html %}
+    <h4>Code</h4>
+    {% highlight html %}{% include_relative paralax-example-items.html %}{% endhighlight %}
+
+
+</div>
+{% include edit.html %}

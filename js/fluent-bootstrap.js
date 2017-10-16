@@ -8,3 +8,4 @@ require('bootstrap/dist/js/bootstrap.js');
 require('chart.js');
 require('./dashboard');
 require('./toggle');
+require('./parallax');
