@@ -6,9 +6,25 @@
 </description>
     <link>https://disjfa.github.io/fluent-bootstrap/</link>
     <atom:link href="https://disjfa.github.io/fluent-bootstrap/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Oct 2017 21:57:41 +0000</pubDate>
-    <lastBuildDate>Tue, 10 Oct 2017 21:57:41 +0000</lastBuildDate>
+    <pubDate>Mon, 16 Oct 2017 21:56:59 +0000</pubDate>
+    <lastBuildDate>Mon, 16 Oct 2017 21:56:59 +0000</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>Added paralax!</title>
+        <description>&lt;p&gt;Added a paralax plugin, &lt;a href=&quot;http://pixelcog.github.io/parallax.js/&quot;&gt;parallax.js&lt;/a&gt;. Now we can use the magic of paralax on our pages!&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 16 Oct 2017 19:17:01 +0000</pubDate>
+        <link>https://disjfa.github.io/fluent-bootstrap/news/update/2017/10/16/added-paralax.html</link>
+        <guid isPermaLink="true">https://disjfa.github.io/fluent-bootstrap/news/update/2017/10/16/added-paralax.html</guid>
+        
+        
+        <category>news</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Setup fluent bootstrap!</title>
@@ -16,9 +32,9 @@
 Lets merge those. Disable transitions and make my own. Lets go!&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 06 Jul 2016 21:17:01 +0000</pubDate>
-        <link>https://disjfa.github.io/fluent-bootstrap/news/update/2016/07/06/setup-fluent-bootstrap.html</link>
-        <guid isPermaLink="true">https://disjfa.github.io/fluent-bootstrap/news/update/2016/07/06/setup-fluent-bootstrap.html</guid>
+        <pubDate>Sun, 01 Oct 2017 21:17:01 +0000</pubDate>
+        <link>https://disjfa.github.io/fluent-bootstrap/news/update/2017/10/01/setup-fluent-bootstrap.html</link>
+        <guid isPermaLink="true">https://disjfa.github.io/fluent-bootstrap/news/update/2017/10/01/setup-fluent-bootstrap.html</guid>
         
         
         <category>news</category>

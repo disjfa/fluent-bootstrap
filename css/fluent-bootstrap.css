@@ -10894,25 +10894,17 @@ a.text-dark:hover {
   color: #099;
 }
 
-.page {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-}
 .page .page-sidebar {
   width: 55px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  overflow: visible;
+  z-index: 1;
 }
 .page .page-body {
-  height: 100vh;
-  overflow: auto;
-  flex: 1;
-}
-.page .page-title {
-  padding: 1rem 0;
-}
-.page .page-sidebar {
-  position: relative;
-  z-index: 1;
+  margin: 0 0 0 55px;
 }
 
 .sidebar {
@@ -11025,6 +11017,124 @@ a.text-dark:hover {
     transform: translate(0, 0);
     opacity: 1;
   }
+}
+.vmin-body {
+  position: relative;
+}
+
+.vmin-10 {
+  min-height: 10vmin;
+}
+.vmin-10 .vmin-body {
+  min-height: 10vmin;
+}
+
+.vmin-20 {
+  min-height: 20vmin;
+}
+.vmin-20 .vmin-body {
+  min-height: 20vmin;
+}
+
+.vmin-30 {
+  min-height: 30vmin;
+}
+.vmin-30 .vmin-body {
+  min-height: 30vmin;
+}
+
+.vmin-40 {
+  min-height: 40vmin;
+}
+.vmin-40 .vmin-body {
+  min-height: 40vmin;
+}
+
+.vmin-50 {
+  min-height: 50vmin;
+}
+.vmin-50 .vmin-body {
+  min-height: 50vmin;
+}
+
+.vmin-60 {
+  min-height: 60vmin;
+}
+.vmin-60 .vmin-body {
+  min-height: 60vmin;
+}
+
+.vmin-70 {
+  min-height: 70vmin;
+}
+.vmin-70 .vmin-body {
+  min-height: 70vmin;
+}
+
+.vmin-80 {
+  min-height: 80vmin;
+}
+.vmin-80 .vmin-body {
+  min-height: 80vmin;
+}
+
+.vmin-90 {
+  min-height: 90vmin;
+}
+.vmin-90 .vmin-body {
+  min-height: 90vmin;
+}
+
+.vmin-100 {
+  min-height: 100vmin;
+}
+.vmin-100 .vmin-body {
+  min-height: 100vmin;
+}
+
+.bg-faded {
+  position: relative;
+}
+.bg-faded:before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+.bg-faded-primary:before {
+  background-color: rgba(0, 99, 177, 0.5);
+}
+
+.bg-faded-secondary:before {
+  background-color: rgba(134, 142, 150, 0.5);
+}
+
+.bg-faded-success:before {
+  background-color: rgba(0, 204, 106, 0.5);
+}
+
+.bg-faded-info:before {
+  background-color: rgba(23, 162, 184, 0.5);
+}
+
+.bg-faded-warning:before {
+  background-color: rgba(255, 185, 0, 0.5);
+}
+
+.bg-faded-danger:before {
+  background-color: rgba(232, 17, 35, 0.5);
+}
+
+.bg-faded-light:before {
+  background-color: rgba(248, 249, 250, 0.5);
+}
+
+.bg-faded-dark:before {
+  background-color: rgba(52, 58, 64, 0.5);
 }
 
 /*# sourceMappingURL=fluent-bootstrap.css.map */
