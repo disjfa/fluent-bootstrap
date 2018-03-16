@@ -14,7 +14,7 @@ gulp.task("favicon", function () {
     url: "https://disjfa.github.io/fluent-bootstrap/",
     display: "standalone",
     orientation: "portrait",
-    start_url: "/?homescreen=1",
+    start_url: "/fluent-bootstrap/?homescreen=1",
     version: 1.0,
     logging: false,
     online: false,
