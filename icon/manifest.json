@@ -6,7 +6,7 @@
   "lang": "en-US",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "/?homescreen=1",
+  "start_url": "/fluent-bootstrap/?homescreen=1",
   "background_color": "#171717",
   "theme_color": "#000",
   "icons": [

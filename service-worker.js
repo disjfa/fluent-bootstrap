@@ -325,7 +325,7 @@ self.__precacheManifest = [
   },
   {
     "url": "service-worker.js",
-    "revision": "242705be75a858fade9b9a0f6785b09c"
+    "revision": "2a71660b8ba86ee43e9a18a4b57a1efd"
   },
   {
     "url": "tables.html",
