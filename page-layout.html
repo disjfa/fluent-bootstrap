@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home</title>
+    <title>Page layout</title>
     <meta name="description" content="A simple admin page, responsive and beautiful. For useage on your own product. I has a lot of example use cases you can implement on your own site or admin page.
 ">
 
     <link rel="stylesheet" href="/fluent-bootstrap/assets/fluent-bootstrap.css">
     <link rel="stylesheet" href="/fluent-bootstrap/css/highlight.css">
-    <link rel="canonical" href="https://disjfa.github.io/fluent-bootstrap/">
+    <link rel="canonical" href="https://disjfa.github.io/fluent-bootstrap/page-layout.html">
     <link rel="alternate" type="application/rss+xml" title="Glynn admin" href="https://disjfa.github.io/fluent-bootstrap/feed.xml">
     <link rel="manifest" href="/fluent-bootstrap/icon/manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
@@ -62,7 +62,7 @@
     
 
     
-        <li class="active">
+        <li>
             <a class="sidebar-link" href="/fluent-bootstrap/">
                 <i class="fa fa-fw fa-home"></i>
                 <span class="sidebar-title">
@@ -139,7 +139,7 @@
     
 
     
-        <li>
+        <li class="active">
             <a class="sidebar-link" href="/fluent-bootstrap/page-layout.html">
                 <i class="fa fa-fw fa-file-o"></i>
                 <span class="sidebar-title">
@@ -178,102 +178,89 @@
     <div class="page-body">
         <div class="page-main-bg">
             <div class="container-fluid">
-    <br>
     <div class="row">
-        <div class="col-md-6 col-lg-4">
-            <div class="list-group">
-                
-                    <div class="list-group-item">
-                        <h4>
-                            <a href="/fluent-bootstrap/news/update/2017/10/16/added-paralax.html">Added paralax!</a>
-                        </h4>
-                        <div>
-                            <small class="card-text text-muted">
-                                Oct 16, 2017
-                            </small>
-                        </div>
-                        <a href="/fluent-bootstrap/news/update/2017/10/16/added-paralax.html" class="btn btn-primary">
-                            Read more
-                        </a>
-                    </div>
-                
-                    <div class="list-group-item">
-                        <h4>
-                            <a href="/fluent-bootstrap/news/update/2017/10/01/setup-fluent-bootstrap.html">Setup fluent bootstrap!</a>
-                        </h4>
-                        <div>
-                            <small class="card-text text-muted">
-                                Oct 1, 2017
-                            </small>
-                        </div>
-                        <a href="/fluent-bootstrap/news/update/2017/10/01/setup-fluent-bootstrap.html" class="btn btn-primary">
-                            Read more
-                        </a>
-                    </div>
-                
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-8">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card ">
-                        <h3 class="card-header">Added some charts</h3>
-                        <div class="card-body">
-                            <canvas id="chart-1"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <br>
-                    <h3>Blocks</h3>
-                </div>
-                <div class="col-lg-6 col-12 py-2">
-                    <div class="card text-white bg-primary text-xs-center">
-                        <div class="card-body">
-                            <blockquote class="card-blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 py-2">
-                    <div class="card text-white bg-info text-xs-center">
-                        <div class="card-body">
-                            <blockquote class="card-blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 py-2">
-                    <div class="card text-white bg-warning text-xs-center">
-                        <div class="card-body">
-                            <blockquote class="card-blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 py-2">
-                    <div class="card text-white bg-success text-xs-center">
-                        <div class="card-body">
-                            <blockquote class="card-blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-12">
+            <h1>Page layout</h1>
+            <p>
+                The setup for the admin is the page layout, lets examine.
+            </p>
+            <h3>Layout</h3>
+            <p>
+                This is the framework for the page. It sets up the menu bar and the main content. I just added a
+                container on the main content so it wont go wider than a bootstrap container.
+            </p>
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-sidebar"</span><span class="nt">&gt;</span>
+        ... sidebar
+    <span class="nt">&lt;/div&gt;</span>
 
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-main-bg container"</span><span class="nt">&gt;</span>
+            ... content
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+            <h3>Sidebar</h3>
+            <p>
+                An example for a sidebar, it has a couple of examples, a media object i juse for my user image. A
+                default sidebar link and an open and closed sidebar menu.
+            </p>
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar navbar-toggleable-md navbar-inverse"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"navbar-toggler navbar-toggler-right my-2 py-2"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#main-menu"</span><span class="nt">&gt;</span>
+        <span class="ni">&amp;#9776;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-lg-center py-3 px-3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"site-title"</span> <span class="na">href=</span><span class="s">"/fluent-bootstrap/"</span><span class="nt">&gt;</span>
+            ... site title
+        <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"main-menu"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 px-0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sidebar-user"</span> <span class="na">href=</span><span class="s">"#profile"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+                    ... media object
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"menu"</span> <span class="na">class=</span><span class="s">"sidebar-menu"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sidebar-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>... sidebar link<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"sidebar-sub"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sidebar-link collapsed"</span> <span class="na">href=</span><span class="s">"#sub-menu-1"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span><span class="nt">&gt;</span>... toggable submenu<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidebar-sub collapse"</span> <span class="na">id=</span><span class="s">"sub-menu-1"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sidebar-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>... sidebar link<span class="nt">&lt;/a&gt;</span>
+                        <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"sidebar-sub active"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sidebar-link"</span> <span class="na">href=</span><span class="s">"#sub-menu-1"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span><span class="nt">&gt;</span>... active toggable submenu<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidebar-sub collapse in"</span> <span class="na">id=</span><span class="s">"sub-menu-1"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sidebar-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>... sidebar link<span class="nt">&lt;/a&gt;</span>
+                        <span class="nt">&lt;/li&gt;</span>
+                        ... and so on
+                    <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
         </div>
     </div>
 </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pt-3">
+                <a href="https://github.com/disjfa/fluent-bootstrap/tree/master/site/pages/page/page.html"
+                   class="btn btn-outline-primary">
+                    <i class="fa fa-github"></i>
+                    edit on github
+                </a>
+            </div>
+        </div>
+    </div>
 
 
 

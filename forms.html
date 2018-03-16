@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Forms</title>
+    <meta name="description" content="A simple admin page, responsive and beautiful. For useage on your own product. I has a lot of example use cases you can implement on your own site or admin page.
+">
+
+    <link rel="stylesheet" href="/fluent-bootstrap/assets/fluent-bootstrap.css">
+    <link rel="stylesheet" href="/fluent-bootstrap/css/highlight.css">
+    <link rel="canonical" href="https://disjfa.github.io/fluent-bootstrap/forms.html">
+    <link rel="alternate" type="application/rss+xml" title="Glynn admin" href="https://disjfa.github.io/fluent-bootstrap/feed.xml">
+    <link rel="manifest" href="/fluent-bootstrap/icon/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#171717">
+<meta name="application-name" content="Fluent bootstrap">
+<link rel="apple-touch-icon" sizes="57x57" href="/fluent-bootstrap/icon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/fluent-bootstrapfluent-bootstrap/icon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/fluent-bootstrapfluent-bootstrap/icon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/fluent-bootstrapfluent-bootstrap/icon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/fluent-bootstrapfluent-bootstrap/icon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/fluent-bootstrapfluent-bootstrap/icon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/fluent-bootstrapfluent-bootstrap/icon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/fluent-bootstrapfluent-bootstrap/icon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/fluent-bootstrapfluent-bootstrap/icon/apple-touch-icon-180x180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Fluent bootstrap">
+<link rel="icon" type="image/png" sizes="228x228" href="/fluent-bootstrap/icon/coast-228x228.png">
+<meta name="msapplication-TileColor" content="#171717">
+<meta name="msapplication-TileImage" content="/fluent-bootstrap/icon/mstile-144x144.png">
+<meta name="msapplication-config" content="/fluent-bootstrap/icon/browserconfig.xml">
+<link rel="yandex-tableau-widget" href="/fluent-bootstrap/icon/yandex-browser-manifest.json">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/fluent-bootstrap/icon/apple-touch-startup-image-320x460.png">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/fluent-bootstrap/icon/apple-touch-startup-image-640x920.png">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/fluent-bootstrap/icon/apple-touch-startup-image-640x1096.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/fluent-bootstrap/icon/apple-touch-startup-image-750x1294.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/fluent-bootstrap/icon/apple-touch-startup-image-1182x2208.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/fluent-bootstrap/icon/apple-touch-startup-image-1242x2148.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/fluent-bootstrap/icon/apple-touch-startup-image-748x1024.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/fluent-bootstrap/icon/apple-touch-startup-image-768x1004.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/fluent-bootstrap/icon/apple-touch-startup-image-1496x2048.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/fluent-bootstrap/icon/apple-touch-startup-image-1536x2008.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/fluent-bootstrap/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/fluent-bootstrap/icon/favicon-16x16.png">
+<link rel="shortcut icon" href="/fluent-bootstrap/icon/favicon.ico">
+</head>
+
+<body>
+<div class="page">
+    <div class="page-sidebar">
+        <div class="sidebar" id="sidebar">
+    <a class="sidebar-title px-3 py-3 d-block js-toggle-class" href="#" data-class="show" data-target="#sidebar">
+        <i class="fa fa-fw fa-bars"></i>
+    </a>
+    <ul id="menu" class="sidebar-menu">
+        
+
+    
+
+    
+        <li>
+            <a class="sidebar-link" href="/fluent-bootstrap/">
+                <i class="fa fa-fw fa-home"></i>
+                <span class="sidebar-title">
+                    Home
+                </span>
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a class="sidebar-link" href="/fluent-bootstrap/about.html">
+                <i class="fa fa-fw fa-info"></i>
+                <span class="sidebar-title">
+                    About
+                </span>
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a class="sidebar-link" href="/fluent-bootstrap/buttons.html">
+                <i class="fa fa-fw fa-square"></i>
+                <span class="sidebar-title">
+                    Buttons
+                </span>
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a class="sidebar-link" href="/fluent-bootstrap/cards.html">
+                <i class="fa fa-fw fa-th-large"></i>
+                <span class="sidebar-title">
+                    Cards
+                </span>
+            </a>
+        </li>
+    
+
+    
+        <li class="active">
+            <a class="sidebar-link" href="/fluent-bootstrap/forms.html">
+                <i class="fa fa-fw fa-check-square-o"></i>
+                <span class="sidebar-title">
+                    Forms
+                </span>
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a class="sidebar-link" href="/fluent-bootstrap/paralax.html">
+                <i class="fa fa-fw fa-address-card-o"></i>
+                <span class="sidebar-title">
+                    Paralax
+                </span>
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a class="sidebar-link" href="/fluent-bootstrap/carousel.html">
+                <i class="fa fa-fw fa-picture-o"></i>
+                <span class="sidebar-title">
+                    Carousel
+                </span>
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a class="sidebar-link" href="/fluent-bootstrap/page-layout.html">
+                <i class="fa fa-fw fa-file-o"></i>
+                <span class="sidebar-title">
+                    Page layout
+                </span>
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a class="sidebar-link" href="/fluent-bootstrap/profile.html">
+                <i class="fa fa-fw fa-user"></i>
+                <span class="sidebar-title">
+                    Profile
+                </span>
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a class="sidebar-link" href="/fluent-bootstrap/tables.html">
+                <i class="fa fa-fw fa-th-list"></i>
+                <span class="sidebar-title">
+                    Tables
+                </span>
+            </a>
+        </li>
+    
+
+    </ul>
+</div>
+    </div>
+
+    <div class="page-body">
+        <div class="page-main-bg">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-6">
+            <h3>Default forms</h3>
+            <form action="#">
+                
+                    <div class="form-group">
+                        <label for="default-example-text">
+                            Example text
+                        </label>
+                        
+                            <input type="text" id="default-example-text" class="form-control" required>
+                        
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="default-example-email">
+                            Example email
+                        </label>
+                        
+                            <input type="email" id="default-example-email" class="form-control" required>
+                        
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="default-example-password">
+                            Example password
+                        </label>
+                        
+                            <input type="password" id="default-example-password" class="form-control" required>
+                        
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="default-example-number">
+                            Example number
+                        </label>
+                        
+                            <input type="number" id="default-example-number" class="form-control" required>
+                        
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="default-example-select">
+                            Example select
+                        </label>
+                        
+                            <select name="default-example-select" id="default-example-select" class="form-control">
+                                
+                                    <option value="one">one</option>
+                                
+                                    <option value="two">two</option>
+                                
+                                    <option value="three">three</option>
+                                
+                            </select>
+                            
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="default-example-checkbox">
+                            Example checkbox
+                        </label>
+                        
+                            
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="default-example-checkbox-one">
+                                    <label class="custom-control-label" for="default-example-checkbox-one">one</label>
+                                </div>
+                            
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="default-example-checkbox-two">
+                                    <label class="custom-control-label" for="default-example-checkbox-two">two</label>
+                                </div>
+                            
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="default-example-checkbox-three">
+                                    <label class="custom-control-label" for="default-example-checkbox-three">three</label>
+                                </div>
+                            
+                            
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="default-example-radio">
+                            Example radio
+                        </label>
+                        
+                            
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="default-example-radio-one" name="default-example-radio" class="custom-control-input">
+                                    <label class="custom-control-label" for="default-example-radio-one">one</label>
+                                </div>
+                            
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="default-example-radio-two" name="default-example-radio" class="custom-control-input">
+                                    <label class="custom-control-label" for="default-example-radio-two">two</label>
+                                </div>
+                            
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="default-example-radio-three" name="default-example-radio" class="custom-control-input">
+                                    <label class="custom-control-label" for="default-example-radio-three">three</label>
+                                </div>
+                            
+                            
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="default-example-textarea">
+                            Example textarea
+                        </label>
+                        
+                            <textarea name="default-example-textarea" id="default-example-textarea" class="form-control"
+                                      required></textarea>
+                        
+                    </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-floppy-o"></i>
+                        save
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="col-xl-6">
+            <h3>Inline forms</h3>
+            <form action="#">
+                
+                    <div class="form-group row">
+                        <label for="inline-example-text" class="col-lg-4 col-form-label">
+                            Example text
+                        </label>
+                        <div class="col-lg-8">
+                            
+                                <input type="text" id="inline-example-text" class="form-control" required>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="form-group row">
+                        <label for="inline-example-email" class="col-lg-4 col-form-label">
+                            Example email
+                        </label>
+                        <div class="col-lg-8">
+                            
+                                <input type="email" id="inline-example-email" class="form-control" required>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="form-group row">
+                        <label for="inline-example-password" class="col-lg-4 col-form-label">
+                            Example password
+                        </label>
+                        <div class="col-lg-8">
+                            
+                                <input type="password" id="inline-example-password" class="form-control" required>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="form-group row">
+                        <label for="inline-example-number" class="col-lg-4 col-form-label">
+                            Example number
+                        </label>
+                        <div class="col-lg-8">
+                            
+                                <input type="number" id="inline-example-number" class="form-control" required>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="form-group row">
+                        <label for="inline-example-select" class="col-lg-4 col-form-label">
+                            Example select
+                        </label>
+                        <div class="col-lg-8">
+                            
+                                <select name="inline-example-select" id="inline-example-select" class="form-control"
+                                        required>
+                                    
+                                        <option value="one">one</option>
+                                    
+                                        <option value="two">two</option>
+                                    
+                                        <option value="three">three</option>
+                                    
+                                </select>
+                                
+                        </div>
+                    </div>
+                
+                    <div class="form-group row">
+                        <label for="inline-example-checkbox" class="col-lg-4 col-form-label">
+                            Example checkbox
+                        </label>
+                        <div class="col-lg-8">
+                            
+                                
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="inline-example-checkbox-one">
+                                        <label class="custom-control-label" for="inline-example-checkbox-one">one</label>
+                                    </div>
+                                
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="inline-example-checkbox-two">
+                                        <label class="custom-control-label" for="inline-example-checkbox-two">two</label>
+                                    </div>
+                                
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="inline-example-checkbox-three">
+                                        <label class="custom-control-label" for="inline-example-checkbox-three">three</label>
+                                    </div>
+                                
+                                
+                        </div>
+                    </div>
+                
+                    <div class="form-group row">
+                        <label for="inline-example-radio" class="col-lg-4 col-form-label">
+                            Example radio
+                        </label>
+                        <div class="col-lg-8">
+                            
+                                
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="inline-example-radio-one" name="inline-example-radio" class="custom-control-input">
+                                        <label class="custom-control-label" for="inline-example-radio-one">one</label>
+                                    </div>
+                                
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="inline-example-radio-two" name="inline-example-radio" class="custom-control-input">
+                                        <label class="custom-control-label" for="inline-example-radio-two">two</label>
+                                    </div>
+                                
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="inline-example-radio-three" name="inline-example-radio" class="custom-control-input">
+                                        <label class="custom-control-label" for="inline-example-radio-three">three</label>
+                                    </div>
+                                    
+                        </div>
+                    </div>
+                
+                    <div class="form-group row">
+                        <label for="inline-example-textarea" class="col-lg-4 col-form-label">
+                            Example textarea
+                        </label>
+                        <div class="col-lg-8">
+                            
+                                <textarea name="inline-example-textarea" id="inline-example-textarea" class="form-control"
+                                          required></textarea>
+                            
+                        </div>
+                    </div>
+                
+                <div class="form-group row">
+                    <label for="" class="col-lg-4 col-form-label">
+
+                    </label>
+                    <div class="col-lg-8">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa fa-floppy-o"></i>
+                            save
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pt-3">
+                <a href="https://github.com/disjfa/fluent-bootstrap/tree/master/site/pages/forms.html"
+                   class="btn btn-outline-primary">
+                    <i class="fa fa-github"></i>
+                    edit on github
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <hr>
+                        <p class="text-xs-right">
+                            subscribe
+                            <a href="/fluent-bootstrap/feed.xml">
+                                <i class="fa fa-rss"></i>
+                                via RSS
+                            </a>
+                            |
+                            connect
+                            <a href="https://github.com/disjfa/fluent-bootstrap">
+                                <i class="fa fa-github"></i>
+                                on gitbub
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-83598448-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+<script src="/fluent-bootstrap/assets/fluent-bootstrap.js"></script>
+</body>
+</html>

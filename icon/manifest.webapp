@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "name": "Fluent bootstrap",
+  "description": "Fluent bootstrap",
+  "icons": {
+    "60": "/fluent-bootstrap/icon/firefox_app_60x60.png",
+    "128": "/fluent-bootstrap/icon/firefox_app_128x128.png",
+    "512": "/fluent-bootstrap/icon/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "disjfa",
+    "url": "http://disjfa.nl/"
+  }
+}

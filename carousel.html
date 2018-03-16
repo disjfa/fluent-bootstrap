@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home</title>
+    <title>Carousel</title>
     <meta name="description" content="A simple admin page, responsive and beautiful. For useage on your own product. I has a lot of example use cases you can implement on your own site or admin page.
 ">
 
     <link rel="stylesheet" href="/fluent-bootstrap/assets/fluent-bootstrap.css">
     <link rel="stylesheet" href="/fluent-bootstrap/css/highlight.css">
-    <link rel="canonical" href="https://disjfa.github.io/fluent-bootstrap/">
+    <link rel="canonical" href="https://disjfa.github.io/fluent-bootstrap/carousel.html">
     <link rel="alternate" type="application/rss+xml" title="Glynn admin" href="https://disjfa.github.io/fluent-bootstrap/feed.xml">
     <link rel="manifest" href="/fluent-bootstrap/icon/manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
@@ -62,7 +62,7 @@
     
 
     
-        <li class="active">
+        <li>
             <a class="sidebar-link" href="/fluent-bootstrap/">
                 <i class="fa fa-fw fa-home"></i>
                 <span class="sidebar-title">
@@ -128,7 +128,7 @@
     
 
     
-        <li>
+        <li class="active">
             <a class="sidebar-link" href="/fluent-bootstrap/carousel.html">
                 <i class="fa fa-fw fa-picture-o"></i>
                 <span class="sidebar-title">
@@ -178,102 +178,165 @@
     <div class="page-body">
         <div class="page-main-bg">
             <div class="container-fluid">
-    <br>
-    <div class="row">
-        <div class="col-md-6 col-lg-4">
-            <div class="list-group">
-                
-                    <div class="list-group-item">
-                        <h4>
-                            <a href="/fluent-bootstrap/news/update/2017/10/16/added-paralax.html">Added paralax!</a>
-                        </h4>
-                        <div>
-                            <small class="card-text text-muted">
-                                Oct 16, 2017
-                            </small>
-                        </div>
-                        <a href="/fluent-bootstrap/news/update/2017/10/16/added-paralax.html" class="btn btn-primary">
-                            Read more
-                        </a>
-                    </div>
-                
-                    <div class="list-group-item">
-                        <h4>
-                            <a href="/fluent-bootstrap/news/update/2017/10/01/setup-fluent-bootstrap.html">Setup fluent bootstrap!</a>
-                        </h4>
-                        <div>
-                            <small class="card-text text-muted">
-                                Oct 1, 2017
-                            </small>
-                        </div>
-                        <a href="/fluent-bootstrap/news/update/2017/10/01/setup-fluent-bootstrap.html" class="btn btn-primary">
-                            Read more
-                        </a>
-                    </div>
-                
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-8">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card ">
-                        <h3 class="card-header">Added some charts</h3>
-                        <div class="card-body">
-                            <canvas id="chart-1"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <br>
-                    <h3>Blocks</h3>
-                </div>
-                <div class="col-lg-6 col-12 py-2">
-                    <div class="card text-white bg-primary text-xs-center">
-                        <div class="card-body">
-                            <blockquote class="card-blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 py-2">
-                    <div class="card text-white bg-info text-xs-center">
-                        <div class="card-body">
-                            <blockquote class="card-blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 py-2">
-                    <div class="card text-white bg-warning text-xs-center">
-                        <div class="card-body">
-                            <blockquote class="card-blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 py-2">
-                    <div class="card text-white bg-success text-xs-center">
-                        <div class="card-body">
-                            <blockquote class="card-blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    <div class="row bg-dark mb-2">
+        <div class="col-12 py-3">
+            <h1>Carousel</h1>
         </div>
     </div>
+    <h3>On a white background, like an example we found.</h3>
+    <div id="carousel-text-example" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-text-example" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-text-example" data-slide-to="1"></li>
+            <li data-target="#carousel-text-example" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center flex-column carousel-body bg-light">
+                    <div class="carousel-delay row">
+                        <div class="col-lg-6 text-dark d-flex justify-content-center flex-column py-3">
+                            <div>
+                                <h1>A animi</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi consectetur
+                                    deleniti dolorum esse est ipsa, ipsum iure nam omnis pariatur, placeat
+                                    praesentium provident reiciendis reprehenderit sint suscipit tenetur ut?
+                                </p>
+                                <a href="#" class="btn btn-dark">
+                                    This is a button
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 py-3">
+                            <img src="/fluent-bootstrap/img/photo-1430418372158-66adfd0d88cb.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center flex-column carousel-body bg-light">
+                    <div class="carousel-delay row">
+                        <div class="col-lg-6 text-dark d-flex justify-content-center flex-column py-3">
+                            <div>
+                                <h1>Ad architecto</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cum
+                                    doloremque enim esse magni nam numquam, porro possimus quae quod rem repudiandae
+                                    ullam veniam, vero? Explicabo quod similique voluptate.
+                                </p>
+                                <a href="#" class="btn btn-dark">
+                                    This is a button
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 py-3">
+                            <img src="/fluent-bootstrap/img/photo-1431440869543-efaf3388c585.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center flex-column carousel-body bg-light">
+                    <div class="carousel-delay row">
+                        <div class="col-lg-6 text-dark d-flex justify-content-center flex-column py-3">
+                            <div>
+                                <h1>Accusantium</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid
+                                    cupiditate distinctio eius error facere mollitia natus reprehenderit sit
+                                    temporibus! A, autem consequuntur molestiae nemo neque nesciunt nisi nulla
+                                    officiis.
+                                </p>
+                                <a href="#" class="btn btn-dark">
+                                    This is a button
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 py-3">
+                            <img src="/fluent-bootstrap/img/photo-1466278313810-9aca9abea861.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev text-dark" href="#carousel-text-example" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next text-dark" href="#carousel-text-example" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <br>
+    <h3>Add a background</h3>
+    <p>Or we just go full on background image, still use an embed for positioning.</p>
+    <div id="carousel-image-example" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-image-example" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-image-example" data-slide-to="1"></li>
+            <li data-target="#carousel-image-example" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="img-cover d-flex justify-content-center flex-column carousel-body" style="background-image: url(/fluent-bootstrap/img/photo-1430418372158-66adfd0d88cb.jpg);">
+                    <div class="carousel-delay">
+                        <h1>Molestiae</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque doloribus,
+                            eaque esse expedita hic ipsam laboriosam nulla provident quos! Culpa cum, esse facilis
+                            maiores molestiae nam nemo qui veritatis!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="img-cover d-flex justify-content-center flex-column carousel-body" style="background-image: url(/fluent-bootstrap/img/photo-1431440869543-efaf3388c585.jpg);">
+                    <div class="carousel-delay">
+                        <h1>Deserunt doloribus</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloribus iusto neque
+                            nulla ut? Dolor et laboriosam qui tempora! Ab consectetur distinctio ea hic illum,
+                            laborum mollitia obcaecati odio sed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="img-cover d-flex justify-content-center flex-column carousel-body" style="background-image: url(/fluent-bootstrap/img/photo-1466278313810-9aca9abea861.jpg);">
+                    <div class="carousel-delay">
+                        <h1>Ad deleniti</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deleniti facere quas?
+                            Accusamus ad delectus doloribus, eligendi enim est exercitationem hic ipsam iste iure
+                            labore, nisi nulla pariatur quae totam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-image-example" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-image-example" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pt-3">
+                <a href="https://github.com/disjfa/fluent-bootstrap/tree/master/site/pages/carousel/index.html"
+                   class="btn btn-outline-primary">
+                    <i class="fa fa-github"></i>
+                    edit on github
+                </a>
+            </div>
+        </div>
+    </div>
 
 
 
