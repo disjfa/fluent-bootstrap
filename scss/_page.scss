@@ -1,7 +1,5 @@
 .page {
-
-
-  .page-sidebar {
+  &-sidebar {
     width: 55px;
     position: fixed;
     left: 0;
@@ -11,8 +9,7 @@
     z-index: 1;
   }
 
-  .page-body {
+  &-body {
     margin: 0 0 0 55px;
   }
-
 }

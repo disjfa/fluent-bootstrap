@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "api_version": 1,
+  "layout": {
+    "logo": "/fluent-bootstrap/icon/yandex-browser-50x50.png",
+    "color": "#171717",
+    "show_title": true
+  }
+}
